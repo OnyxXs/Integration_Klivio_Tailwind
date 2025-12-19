@@ -17,36 +17,35 @@
 <body>
 
     <!-- NAVBAR -->
-    <header class="w-full bg-[#1A102B] shadow">
+    <header
+        class="siteHeader fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#1A102B]/60 w-full bg-[#1A102B] shadow">
         <div class="relative flex items-center h-16 px-4">
 
             <!-- Logo à gauche -->
             <div class="flex items-center">
-            <img src="assets/img/logo.png" alt="Logo Klivio" class="h-8">
+                <img src="assets/img/logo.png" alt="Logo Klivio" class="h-8">
             </div>
 
             <!-- Burger centré -->
-            <div id="burger" class="absolute left-1/2 -translate-x-1/2 flex flex-col justify-between h-5 w-7 cursor-pointer">
-            <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
-            <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
-            <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
+            <div id="burger"
+                class="absolute left-1/2 -translate-x-1/2 flex flex-col justify-between h-5 w-7 cursor-pointer">
+                <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
+                <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
+                <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
             </div>
 
         </div>
 
         <!-- Menu mobile -->
-        <nav id="mobileMenu" class="hidden">
-            <ul class="flex flex-col gap-4 p-4 bg-[#2E1A47] text-[#E9D5FF]">
-            <li><a href="#" class="block">Formations</a></li>
-            <li><a href="#" class="block">Connexion</a></li>
-            <li><a href="#" class="block">Inscription</a></li>
-            <li>
-                <input
-                type="text"
-                placeholder="Rechercher..."
-                class="w-full border border-[#22D3EE] bg-[#1A102B] text-[#E9D5FF] rounded px-3 py-2 placeholder:text-[#E9D5FF]/60"
-                />
-            </li>
+        <nav id="mobileMenu" class="siteHeader hidden">
+            <ul class="flex flex-col gap-4 p-4 bg-[#1A102B]/60 text-[#E9D5FF]">
+                <li><a href="#" class="block">Formations</a></li>
+                <li><a href="#" class="block">Connexion</a></li>
+                <li><a href="#" class="block">Inscription</a></li>
+                <li>
+                    <input type="text" placeholder="Rechercher..."
+                        class="w-full border border-[#22D3EE] bg-[#1A102B]/60 text-[#E9D5FF] rounded px-3 py-2 placeholder:text-[#E9D5FF]/60" />
+                </li>
             </ul>
         </nav>
     </header>
@@ -56,11 +55,12 @@
     <!-- MAIN -->
     <main>
 
-        <section class="relative min-h-screen bg-[url('assets/img/bg-header-mobile.png')] md:bg-[url('assets/img/bg-header.png')] bg-cover bg-center">
+        <section
+            class="relative min-h-screen bg-[url('assets/img/bg-header-mobile.png')] md:bg-[url('assets/img/bg-header.png')] bg-cover bg-center">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1A102B]"></div>
 
             <div class="relative z-10 flex items-center justify-center min-h-screen px-6 text-center">
-                <div class="max-w-2xl">
+                <div class="max-w-2xl bg-[#1A102B]/60 backdrop-blur-md rounded-2xl p-8 md:p-10">
                     <h1 class="text-[#E9D5FF] text-3xl md:text-5xl font-bold mb-4">
                         KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION
                     </h1>
@@ -69,10 +69,8 @@
                         Les meilleures formations sur le développement personnel
                     </p>
 
-                    <a
-                        href="#"
-                        class="inline-block bg-[#C084FC] text-[#1A102B] px-6 py-3 rounded-lg hover:bg-[#22D3EE] transition"
-                    >
+                    <a href="#"
+                        class="inline-block bg-[#C084FC] text-[#1A102B] px-6 py-3 rounded-lg hover:bg-[#22D3EE] transition">
                         En savoir plus
                     </a>
                 </div>
@@ -80,82 +78,104 @@
         </section>
 
 
-        <div>
-            <h1 id="popular">Les formations populaires</h1>
-            <div>
-                <div>
-                    <div>
-                        <h1>15,99 €</h1>
-                        <p>60 €</p>
+        <section class="bg-[#1A102B] py-20 px-6">
+            <h2 id="popular" class="text-center text-[#E9D5FF] text-3xl md:text-4xl font-bold mb-14">Les formations populaires</h2>
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-[#2E1A47] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
+                    <img src="assets/img/img-course.png" alt="formation Parler en public" class="w-full h-44 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-[#E9D5FF] text-xl font-semibold mb-1">Parler en public</h3>
+                        <p class="text-[#E9D5FF]/60 text-sm mb-3">Sonia Lefèvre | Coach prise de parole</p>
+                        <div class="flex gap-1 text-[#C084FC] mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-[#E9D5FF]/80 text-sm mb-6">Gagnez en aisance et captez votre auditoire</p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#22D3EE] text-xl font-bold">15,99 €</span>
+                            <span class="text-[#E9D5FF]/40 line-through">60 €</span>
+                        </div>
                     </div>
-                    <img src="assets/img/img-course.png" alt="formation Gérer son stress">
-                    <h1>Parler en public</h1>
-                    <p>Sonia Lefèvre | Coach prise de parole</p>
-                    <div>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                    </div>
-                    <p>Gagnez en aisance et captez votre auditoire</p>
                 </div>
-                <div>
-                    <div>
-                        <h1>15,99 €</h1>
-                        <p>60 €</p>
+                <div class="bg-[#2E1A47] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
+                    <img src="assets/img/img-course.png" class="w-full h-44 object-cover" alt="image course"/>
+                    <div class="p-6">
+                        <h3 class="text-[#E9D5FF] text-xl font-semibold mb-1">Gérer le stress</h3>
+                        <p class="text-[#E9D5FF]/60 text-sm mb-3">Lucie Garnier | Formatrice</p>
+                        <div class="flex gap-1 text-[#C084FC] mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star opacity-40"></i>
+                        </div>
+                        <p class="text-[#E9D5FF]/80 text-sm mb-6">
+                            Apprenez à rester serein face aux défis et à la pression
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#22D3EE] text-xl font-bold">15,99 €</span>
+                            <span class="text-[#E9D5FF]/40 line-through">60 €</span>
+                        </div>
                     </div>
-                    <img src="assets/img/img-course.png" alt="formation Gérer son stress">
-                    <h1>Gérer le stress</h1>
-                    <p>Lucie Garnier | Formatrice</p>
-                    <div>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star-opacity"></i>
-                    </div>
-                    <p>Apprenez à rester serein face aux défis et à la pression</p>
                 </div>
-                <div>
-                    <div id="equipe">
-                        <h1>15,99 €</h1>
-                        <p>60 €</p>
+                <div class="bg-[#2E1A47] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
+                    <img src="assets/img/img-course.png" class="w-full h-44 object-cover" alt="image course"/>
+                    <div class="p-6">
+                        <h3 class="text-[#E9D5FF] text-xl font-semibold mb-1">Travailler en équipe</h3>
+                        <p class="text-[#E9D5FF]/60 text-sm mb-3">David Moreau | Expert</p>
+                        <div class="flex gap-1 text-[#C084FC] mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-[#E9D5FF]/80 text-sm mb-6">
+                            Collaborez efficacement, même à distance
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#22D3EE] text-xl font-bold">15,99 €</span>
+                            <span class="text-[#E9D5FF]/40 line-through">60 €</span>
+                        </div>
                     </div>
-                    <img src="assets/img/img-course.png" alt="formation travailler en équipe">
-                    <h1>Travailler en équipe</h1>
-                    <p>David Moreau | Expert</p>
-                    <div>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                    </div>
-                    <p>Collaborez efficacement, même à distance</p>
                 </div>
-                <div>
-                    <div>
-                        <h1>15,99 €</h1>
-                        <p>60 €</p>
+
+                <!-- Carte 4 -->
+                <div class="bg-[#2E1A47] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
+                    <img src="assets/img/img-course.png" class="w-full h-44 object-cover" alt="image course" />
+                    <div class="p-6">
+                        <h3 class="text-[#E9D5FF] text-xl font-semibold mb-1">Gérer son temps</h3>
+                        <p class="text-[#E9D5FF]/60 text-sm mb-3">Claire Dumas | Coach organisation</p>
+                        <div class="flex gap-1 text-[#C084FC] mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star opacity-40"></i>
+                        </div>
+                        <p class="text-[#E9D5FF]/80 text-sm mb-6">
+                            Optimisez vos journées et gagnez en efficacité
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[#22D3EE] text-xl font-bold">15,99 €</span>
+                            <span class="text-[#E9D5FF]/40 line-through">60 €</span>
+                        </div>
                     </div>
-                    <img src="assets/img/img-course.png" alt="formation gérer son temps">
-                    <h1>Gérer son temps</h1>
-                    <p>Claire Dumas | Coach organisation</p>
-                    <div>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star"></i>
-                        <i class="fa-solid fa-star" id="star-opacity"></i>
-                    </div>
-                    <p>Optimisez vos journées et gagnez en efficacité</p>
                 </div>
-                <div>
-                    <button>Voir plus de formations</button>
-                </div>
+
             </div>
-        </div>
+
+            <div class="flex justify-center mt-16">
+                <button
+                    class="bg-[#C084FC] text-[#1A102B] font-semibold px-8 py-4 rounded-xl hover:bg-[#22D3EE] transition">
+                    Voir plus de formations
+                </button>
+            </div>
+        </section>
+
 
         <div>
             <h1 id="recent">Les formations récentes</h1>
@@ -209,7 +229,7 @@
                         <i class="fa-solid fa-star" id="star"></i>
                         <i class="fa-solid fa-star" id="star-opacity"></i>
                     </div>
-                   <p>Analysez, décidez et trouvez des solutions durables</p>
+                    <p>Analysez, décidez et trouvez des solutions durables</p>
                 </div>
                 <div>
                     <div id="leadership">
@@ -305,9 +325,14 @@
         <div>
             <h1>À PROPOS DE KLIVIO</h1>
             <p>
-                Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.
-                
-                Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une ducation enrichissante et équitable, guidant notre mission d'offrir des opportunités d'apprentissage de qualité
+                Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous
+                nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la
+                qualité de leur travail.
+
+                Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité écessaire pour explorer
+                divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les
+                formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une ducation
+                enrichissante et équitable, guidant notre mission d'offrir des opportunités d'apprentissage de qualité
             </p>
         </div>
 
@@ -332,7 +357,7 @@
     <footer>
 
         <img src="assets/img/logo.png" alt="Logo Klivio" />
-        
+
         <div>
             <h3>Mentions légales</h3>
             <ul>
@@ -356,14 +381,31 @@
     </footer>
 
 
-<script>
-  const burger = document.getElementById('burger');
-  const mobileMenu = document.getElementById('mobileMenu');
+    <script>
 
-  burger.addEventListener('click', () => {
-    mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
-  });
-</script>
+        // BURGER MENU
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        burger.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // SCROLL NAVBAR
+        const headers = document.querySelectorAll(".siteHeader");
+
+        window.addEventListener("scroll", () => {
+            headers.forEach(header => {
+                if (window.scrollY > 50) {
+                    header.classList.remove("bg-[#1A102B]/60", "backdrop-blur-md", "shadow-lg");
+                    header.classList.add("bg-[#1A102B]/90", "backdrop-blur-md", "shadow-lg");
+                } else {
+                    header.classList.add("bg-[#1A102B]/60", "backdrop-blur-md", "shadow-lg");
+                    header.classList.remove("bg-[#1A102B]/90", "backdrop-blur-md", "shadow-lg");
+                }
+            });
+        });
+    </script>
 
 
 </body>

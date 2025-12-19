@@ -17,40 +17,68 @@
 <body>
 
     <!-- NAVBAR -->
-    <header>
-        <div>
-            <div>
-                <img src="assets/img/logo.png" alt="Logo Klivio" />
+    <header class="w-full bg-[#1A102B] shadow">
+        <div class="relative flex items-center h-16 px-4">
+
+            <!-- Logo à gauche -->
+            <div class="flex items-center">
+            <img src="assets/img/logo.png" alt="Logo Klivio" class="h-8">
             </div>
-            <div id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <!-- Burger centré -->
+            <div id="burger" class="absolute left-1/2 -translate-x-1/2 flex flex-col justify-between h-5 w-7 cursor-pointer">
+            <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
+            <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
+            <span class="block h-0.5 w-full bg-[#E9D5FF]"></span>
             </div>
+
         </div>
 
-        <nav id="mobileMenu">
-            <ul>
-                <li><a href="#">Formations</a></li>
-                <li><a href="#">Connexion</a></li>
-                <li><a href="#">Inscription</a></li>
-                <li>
-                    <input type="text" placeholder="Rechercher..." />
-                </li>
+        <!-- Menu mobile -->
+        <nav id="mobileMenu" class="hidden">
+            <ul class="flex flex-col gap-4 p-4 bg-[#2E1A47] text-[#E9D5FF]">
+            <li><a href="#" class="block">Formations</a></li>
+            <li><a href="#" class="block">Connexion</a></li>
+            <li><a href="#" class="block">Inscription</a></li>
+            <li>
+                <input
+                type="text"
+                placeholder="Rechercher..."
+                class="w-full border border-[#22D3EE] bg-[#1A102B] text-[#E9D5FF] rounded px-3 py-2 placeholder:text-[#E9D5FF]/60"
+                />
+            </li>
             </ul>
         </nav>
     </header>
 
+
+
     <!-- MAIN -->
     <main>
 
-        <section>
-            <div>
-                <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
-                <p>Les meilleures formations sur le développement personnel</p>
-                <a href="#">En savoir plus</a>
+        <section class="relative min-h-screen bg-[url('assets/img/bg-header-mobile.png')] md:bg-[url('assets/img/bg-header.png')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1A102B]"></div>
+
+            <div class="relative z-10 flex items-center justify-center min-h-screen px-6 text-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-[#E9D5FF] text-3xl md:text-5xl font-bold mb-4">
+                        KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION
+                    </h1>
+
+                    <p class="text-[#E9D5FF]/80 text-lg md:text-xl mb-8">
+                        Les meilleures formations sur le développement personnel
+                    </p>
+
+                    <a
+                        href="#"
+                        class="inline-block bg-[#C084FC] text-[#1A102B] px-6 py-3 rounded-lg hover:bg-[#22D3EE] transition"
+                    >
+                        En savoir plus
+                    </a>
+                </div>
             </div>
         </section>
+
 
         <div>
             <h1 id="popular">Les formations populaires</h1>

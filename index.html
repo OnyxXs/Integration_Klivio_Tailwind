@@ -17,8 +17,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <header
-        class="siteHeader fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#1A102B]/60 w-full bg-[#1A102B] shadow">
+    <header class="siteHeader fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#1A102B]/60 shadow">
         <div class="relative flex items-center h-16 px-4">
 
             <div class="flex items-center">
@@ -430,64 +429,140 @@
         </section>
 
         <!-- ABOUT KLIVIO -->
-        <div>
-            <h1>À PROPOS DE KLIVIO</h1>
-            <p>
-                Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous
-                nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la
-                qualité de leur travail.
+        <section class="bg-[#1A102B] py-24">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-                Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité écessaire pour explorer
-                divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les
-                formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une ducation
-                enrichissante et équitable, guidant notre mission d'offrir des opportunités d'apprentissage de qualité
-            </p>
-        </div>
+                <div class="flex justify-center">
+                    <div class="max-w-xl">
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-[#E9D5FF] mb-6 tracking-wide">
+                            À PROPOS DE KLIVIO
+                        </h1>
 
-        <div>
-            <img src="assets/img/logo.png" title="logo">
-        </div>
+                        <p class="text-[#E9D5FF]/80 leading-relaxed">
+                            Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche
+                            éducative.
+                            Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu,
+                            reconnaissant la qualité de leur travail.
+                            <br /><br />
+                            Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité nécessaire
+                            pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant
+                            une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs
+                            forment le socle d'une éducation enrichissante et équitable, guidant notre mission d'offrir
+                            des opportunités d'apprentissage de qualité.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center bg-[#221336] rounded-xl py-16">
+                    <img src="assets/img/logo.png" title="logo" class="w-56 md:w-72">
+                </div>
+
+            </div>
+        </section>
 
         <!-- CONTACT US -->
-        <div>
-            <h1>NOUS CONTACTER</h1>
+        <section class="flex items-center justify-center bg-gradient-to-b from-[#221336]  to-[#1A102B] py-20 px-6">
+            <div class="w-full max-w-5xl text-center">
 
-            <form>
-                <input type="text" name="name" placeholder="Nom">
-                <input type="email" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Votre message"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
+                <h1 class="text-4xl font-extrabold tracking-wide text-[#E9D5FF] mb-10">
+                    NOUS CONTACTER
+                </h1>
+
+                <form class="space-y-10">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <input type="text" name="name" placeholder="Nom"
+                            class="w-full bg-[#35205A] text-white placeholder-[#E9D5FF]/80 px-6 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+
+                        <input type="email" name="email" placeholder="Email"
+                            class="w-full bg-[#35205A] text-white placeholder-[#E9D5FF]/80 px-6 py-4 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+                    </div>
+
+                    <textarea name="message" placeholder="Votre message" rows="6"
+                        class="w-full bg-[#2E1A47] text-white placeholder-[#E9D5FF]/80 px-6 py-4 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-emerald-400"></textarea>
+
+                    <div class="flex justify-center">
+                        <button type="submit"
+                            class="bg-[#C084FC] text-[#1A102B] font-semibold px-8 py-4 rounded-xl hover:bg-[#22D3EE] transition">
+                            Envoyer
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="bg-[#1A102B] text-white px-20 py-16">
+        <div
+            class="max-w-6xl mx-auto flex flex-col md:flex-row flex-wrap items-center md:items-center justify-center md:justify-between gap-16">
 
-        <img src="assets/img/logo.png" alt="Logo Klivio" />
+            <div class="flex-shrink-0 flex items-center justify-center md:justify-start">
+                <img src="assets/img/logo.png" alt="Logo Klivio" class="h-20 object-contain" />
+            </div>
 
-        <div>
-            <h3>Mentions légales</h3>
-            <ul>
-                <li>CGU</li>
-                <li>CGV</li>
-                <li>FAQ</li>
-                <li>Contact</li>
-            </ul>
+            <div class="text-center md:text-left">
+                <h3 class="font-semibold mb-5 text-[#E9D5FF]">Mentions légales</h3>
+                <ul class="space-y-3 text-sm text-[#E9D5FF]/80">
+                    <li class="hover:text-white cursor-pointer">CGU</li>
+                    <li class="hover:text-white cursor-pointer">CGV</li>
+                    <li class="hover:text-white cursor-pointer">FAQ</li>
+                    <li class="hover:text-white cursor-pointer">Contact</li>
+                </ul>
+            </div>
+
+            <div class="text-center md:text-left">
+                <h3 class="font-semibold mb-5 text-[#E9D5FF]">Coordonnées</h3>
+                <ul class="space-y-4 text-sm text-[#E9D5FF]/80">
+                    <li class="flex items-center justify-center md:items-start md:justify-start gap-3">
+                        <img src="assets/icons/location.svg" alt="location" class="mt-0.5 md:mt-1" />
+                        <span class="text-center md:text-left">
+                            1 place République,<br />75003 Paris
+                        </span>
+                    </li>
+
+                    <li class="flex items-center justify-center md:justify-start gap-3">
+                        <img src="assets/icons/phone.svg" alt="Phone number" />
+                        <span>01.02.03.04.05</span>
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start gap-3">
+                        <img src="assets/icons/mail.svg" alt="Email" />
+                        <span>contact@klivio.fr</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-4 items-center md:items-start">
+                <button
+                    class="px-8 py-3 rounded-md bg-[#C084FC] text-[#1A102B] font-medium hover:bg-[#22D3EE] transition">
+                    Connexion
+                </button>
+                <button
+                    class="px-8 py-3 rounded-md bg-[#9F5DD8] text-[#150D22] font-medium hover:bg-[#1BA9BE] transition">
+                    Inscription
+                </button>
+            </div>
         </div>
 
-        <div>
-            <h3>Coordonnées</h3>
-            <ul>
-                <li id="location">1 place République,
-                    75003 Paris
-                </li>
-                <li id="phone">01.02.03.04.05</li>
-                <li id="mail">contact@klivio.fr</li>
-            </ul>
+        <div
+            class="max-w-6xl mx-auto border-t border-[#C084FC] mt-14 pt-8 flex flex-col md:flex-row gap-6 md:gap-0 items-center md:justify-between text-sm text-[#E9D5FF]/50">
+
+            <span>© Klivio - 2025</span>
+
+            <div class="flex items-center gap-5 justify-center">
+                <span>Suivez-nous</span>
+                <img src="assets/icons/Social-Icons(1).svg" alt="Facebook" class="h-5" />
+                <img src="assets/icons/Social-Icons.svg" alt="X" class="h-5" />
+                <img src="assets/icons/Social-Icons(2).svg" alt="Instagram" class="h-5" />
+                <img src="assets/icons/Social-Icons(3).svg" alt="LinkedIn" class="h-5" />
+            </div>
         </div>
     </footer>
+
+
 
 
     <script>
@@ -497,7 +572,8 @@
         const mobileMenu = document.getElementById('mobileMenu');
 
         burger.addEventListener('click', () => {
-            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+            mobileMenu.classList.toggle("hidden");
+
         });
 
         // SCROLL COLOR NAVBAR
